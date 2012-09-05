@@ -1,4 +1,4 @@
-VROOM!!!
+Flirt <3
 ========
 
 Gordon Brander's Vim config.
@@ -10,4 +10,4 @@ Install
 
     cd ~/
     git clone http://___.git .vim
-    ln -s ~/.vim/personal/.vimrc
+    ln -s ~/.vim/flirt/.vimrc
