@@ -3,17 +3,30 @@
 ""
 color molokai " Use Monokai port for vim
 
-" Install Pathogen plugin manager.
-" <https://github.com/tpope/vim-pathogen>
-call pathogen#infect()
-syntax on
-filetype plugin indent on
+""
+"" Installl Vundle
+""
+
+set nocompatible      " Use vim, no vi defaults
+filetype off          " required!
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
+
+""
+"" Bundles
+""
+
+Bundle 'tpope/vim-fugitive'
 
 ""
 "" Basic Setup
 ""
 
-set nocompatible      " Use vim, no vi defaults
 set number            " Show line numbers
 set ruler             " Show line and column number
 syntax enable         " Turn on syntax highlighting allowing local overrides
@@ -64,9 +77,3 @@ set incsearch   " incremental searching
 set ignorecase  " searches are case insensitive...
 set smartcase   " ... unless they contain at least one capital letter
 
-""
-"" Backup and swap files
-""
-
-set backupdir=~/.vim/_backup//    " where to put backup files.
-set directory=~/.vim/_temp//      " where to put swap files.
