@@ -22,6 +22,7 @@ Bundle 'gmarik/vundle'
 ""
 
 Bundle 'tpope/vim-fugitive'
+Bundle "pangloss/vim-javascript"
 
 ""
 "" Basic Setup
