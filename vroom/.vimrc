@@ -1,3 +1,8 @@
+""
+"" Colors
+""
+color molokai " Use Monokai port for vim
+
 " Install Pathogen plugin manager.
 " <https://github.com/tpope/vim-pathogen>
 call pathogen#infect()
@@ -13,6 +18,19 @@ set number            " Show line numbers
 set ruler             " Show line and column number
 syntax enable         " Turn on syntax highlighting allowing local overrides
 set encoding=utf-8    " Set default encoding to UTF-8
+
+""
+"" Status Bar
+""
+
+set laststatus=2  " always show the status bar
+
+" Start the status line
+set statusline=%f\ %m\ %r
+set statusline+=Line:%l/%L[%p%%]
+set statusline+=Col:%v
+set statusline+=Buf:#%n
+set statusline+=[%b][0x%B]
 
 ""
 "" Whitespace
