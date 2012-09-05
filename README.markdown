@@ -11,3 +11,4 @@ Install
     cd ~/
     git clone http://___.git .vim
     ln -s ~/.vim/flirt/.vimrc
+    vim +BundleInstall +qall
