@@ -23,6 +23,8 @@ Bundle 'gmarik/vundle'
 
 Bundle 'tpope/vim-fugitive'
 Bundle "pangloss/vim-javascript"
+Bundle "ervandew/supertab"
+Bundle "scrooloose/syntastic"
 
 ""
 "" Basic Setup
