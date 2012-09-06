@@ -1,30 +1,17 @@
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+
 ""
 "" Colors
 ""
 color molokai " Use Monokai port for vim
 
 ""
-"" Installl Vundle
+"" Install Pathogen plugin manager
+"" <https://github.com/tpope/vim-pathogen>
 ""
-
-set nocompatible      " Use vim, no vi defaults
-filetype off          " required!
-
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-" let Vundle manage Vundle
-" required! 
-Bundle 'gmarik/vundle'
-
-""
-"" Bundles
-""
-
-Bundle 'tpope/vim-fugitive'
-Bundle "pangloss/vim-javascript"
-Bundle "ervandew/supertab"
-Bundle "scrooloose/syntastic"
+call pathogen#infect()
+syntax on
+filetype plugin indent on
 
 ""
 "" Basic Setup
