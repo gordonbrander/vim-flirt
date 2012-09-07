@@ -1,10 +1,5 @@
 ""
-"" Colors
-""
-color molokai " Use Monokai port for vim
-
-""
-"" Installl Vundle
+"" Install Vundle
 ""
 
 set nocompatible      " Use vim, no vi defaults
@@ -25,10 +20,13 @@ Bundle 'tpope/vim-fugitive'
 Bundle "pangloss/vim-javascript"
 Bundle "ervandew/supertab"
 Bundle "scrooloose/syntastic"
+Bundle "tomasr/molokai"
 
 ""
 "" Basic Setup
 ""
+
+color molokai         " Use Monokaii colorscheme port for vim
 
 set number            " Show line numbers
 set ruler             " Show line and column number
