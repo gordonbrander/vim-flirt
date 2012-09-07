@@ -21,6 +21,7 @@ Bundle "pangloss/vim-javascript"
 Bundle "ervandew/supertab"
 Bundle "scrooloose/syntastic"
 Bundle "tomasr/molokai"
+Bundle "scrooloose/nerdcommenter"
 
 ""
 "" Basic Setup
