@@ -22,6 +22,8 @@ Bundle "ervandew/supertab"
 Bundle "scrooloose/syntastic"
 Bundle "tomasr/molokai"
 Bundle "scrooloose/nerdcommenter"
+Bundle "msanders/snipmate.vim"
+Bundle "rstacruz/sparkup"
 
 ""
 "" Basic Setup
