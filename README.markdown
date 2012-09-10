@@ -9,5 +9,5 @@ Install
 -------
 
     git clone https://github.com/gordonbrander/vim-flirt.git ~/.vim --recurse-submodules
-    ln -s ~/.vim/flirt/.vimrc ~/.vimrc
+    ln -s ~/.vim/.vimrc ~/.vimrc
     vim +BundleInstall +qall
