@@ -57,18 +57,23 @@ Search/Replace
 Getting around
 --------------
 
-[Explore files](http://vim.wikia.com/wiki/File_explorer)
-  `:Explore`
-  Gives you a NetRW list, which is actually a file explorer that can be
-  remote OR local, so you can SSH into a server from VIM and edit files. 
+Vim's default navigation tool is a plugin called Netrw. It lets you edit both
+local and remote files.
 
-[Where is the file you're working on?](http://vim.wikia.com/wiki/Set_working_directory_to_the_current_file)
+* [Explore files](http://vim.wikia.com/wiki/File_explorer)  
+  `:Explore` Gives you a Netrw list file explorer in a buffer. Use the arrow/
+  text navigation keys to go up and down the list. Hitting enter will open
+  files and directories.
+
+* Hitting `i` while viewing a Netrw list in `-- NORMAL --` mode will change
+  the display style for the directory.
+
+* [Where is the file you're working on?](http://vim.wikia.com/wiki/Set_working_directory_to_the_current_file)
   `:pwd`
 
-NERDTree
-  Plugin. A visual tree explorer for files.
-
-[Change indentation of a block of text](http://vim.wikia.com/wiki/VimTip224)
+If Netrw isn't cutting it for you, you may want to give
+[NERDTree](https://github.com/scrooloose/nerdtree) a shot. It's a tree
+explorer that creates a project drawer buffer.
 
 Working with [Buffers](http://vim.wikia.com/wiki/Buffers)
 ---------------------------------------------------------
