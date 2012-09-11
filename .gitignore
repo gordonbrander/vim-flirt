@@ -1,4 +1,9 @@
+# Ignore bundles in the bundle directory. We let Vundle
+# manage them instead of Git.
 /bundle/*
+
+# Ignore this auto-generated vim file.
+.netrwhist
 
 # Compiled source #
 ###################
