@@ -38,19 +38,6 @@ set encoding=utf-8    " Set default encoding to UTF-8
 set colorcolumn=80    " Show a visual indicator of the 80-character mark.
 
 ""
-"" Status Bar
-""
-
-set laststatus=2  " always show the status bar
-
-" Start the status line
-set statusline=%f\ %m\ %r
-set statusline+=Line:%l/%L[%p%%]
-set statusline+=Col:%v
-set statusline+=Buf:#%n
-set statusline+=[%b][0x%B]
-
-""
 "" Whitespace
 ""
 
