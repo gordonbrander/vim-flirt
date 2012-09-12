@@ -22,7 +22,6 @@ Bundle "ervandew/supertab"
 Bundle "scrooloose/syntastic"
 Bundle "tomasr/molokai"
 Bundle "scrooloose/nerdcommenter"
-Bundle "msanders/snipmate.vim"
 
 " Zen Coding for Vim.
 " <https://github.com/rstacruz/sparkup>
