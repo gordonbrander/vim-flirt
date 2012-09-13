@@ -3,7 +3,7 @@
 ""
 
 set nocompatible      " Use vim, no vi defaults
-filetype off          " required!
+filetype off          " required by Vundle!
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -22,6 +22,8 @@ Bundle "ervandew/supertab"
 Bundle "scrooloose/syntastic"
 Bundle "tomasr/molokai"
 Bundle "scrooloose/nerdcommenter"
+
+filetype plugin indent on " required by Vundle! ('filetype plugin on' also works)
 
 ""
 "" Basic Setup
