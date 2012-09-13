@@ -54,6 +54,8 @@ Search/Replace
 
 [Search/Replace in a file]: http://vim.wikia.com/wiki/Search_and_replace
 
+[Search/Replace across files]: http://vim.wikia.com/wiki/Find_in_files_within_Vim
+
 Getting around
 --------------
 
