@@ -16,12 +16,21 @@ Bundle 'gmarik/vundle'
 "" Bundles
 ""
 
-Bundle 'tpope/vim-fugitive'
+Bundle "tpope/vim-fugitive"
 Bundle "pangloss/vim-javascript"
 Bundle "ervandew/supertab"
 Bundle "scrooloose/syntastic"
 Bundle "tomasr/molokai"
 Bundle "scrooloose/nerdcommenter"
+
+" Install Snipmate.
+" <https://github.com/garbas/vim-snipmate#using-vundle>
+" First, install dependencies...
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "honza/snipmate-snippets"
+" Then install Snipmate bundle
+Bundle "garbas/vim-snipmate"
 
 filetype plugin indent on " required by Vundle! ('filetype plugin on' also works)
 
