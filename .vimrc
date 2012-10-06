@@ -22,6 +22,7 @@ Bundle "ervandew/supertab"
 Bundle "scrooloose/syntastic"
 Bundle "tomasr/molokai"
 Bundle "scrooloose/nerdcommenter"
+Bundle "tpope/vim-markdown"
 
 " Install Snipmate.
 " <https://github.com/garbas/vim-snipmate#using-vundle>
