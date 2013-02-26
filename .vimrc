@@ -23,6 +23,8 @@ Bundle "scrooloose/syntastic"
 Bundle "tomasr/molokai"
 Bundle "scrooloose/nerdcommenter"
 Bundle "tpope/vim-markdown"
+Bundle "sjl/gundo.vim"
+Bundle "jeetsukumaran/vim-buffergator"
 
 " Install Snipmate.
 " <https://github.com/garbas/vim-snipmate#using-vundle>
@@ -34,6 +36,10 @@ Bundle "honza/snipmate-snippets"
 Bundle "garbas/vim-snipmate"
 
 filetype plugin indent on " required by Vundle! ('filetype plugin on' also works)
+
+"" Configure BufferGator
+let buffergator_viewport_split_policy = "T"
+let buffergator_split_size = 15
 
 ""
 "" Basic Setup
