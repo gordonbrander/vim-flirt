@@ -25,6 +25,8 @@ Bundle "scrooloose/nerdcommenter"
 Bundle "tpope/vim-markdown"
 Bundle "sjl/gundo.vim"
 Bundle "jeetsukumaran/vim-buffergator"
+"" Stylus language highlighting
+Bundle "wavded/vim-stylus"
 
 " Install Snipmate.
 " <https://github.com/garbas/vim-snipmate#using-vundle>
