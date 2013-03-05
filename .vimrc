@@ -90,3 +90,6 @@ set smartcase   " ... unless they contain at least one capital letter
 
 "" Share clipboard with OSX
 set clipboard=unnamed
+
+"" Turn on mouse support in xterm.
+set mouse=a
