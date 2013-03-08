@@ -57,6 +57,13 @@ set colorcolumn=80    " Show a visual indicator of the 80-character mark.
 set showmatch         " Highlight matching parenthesis
 
 ""
+"" Swap Files
+""
+
+set dir=~/.vim/tmp
+set backupdir=~/.vim/tmp
+
+""
 "" Whitespace
 ""
 

@@ -2,6 +2,9 @@
 # manage them instead of Git.
 /bundle/*
 
+# Ignore all swap/backup files
+/tmp/*
+
 # Ignore this auto-generated vim file.
 .netrwhist
 
