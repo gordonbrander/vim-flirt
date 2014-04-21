@@ -18,6 +18,7 @@ Bundle 'gmarik/vundle'
 
 Bundle "tpope/vim-fugitive"
 Bundle "pangloss/vim-javascript"
+Bundle "leshill/vim-json"
 Bundle "ervandew/supertab"
 Bundle "scrooloose/syntastic"
 Bundle "tomasr/molokai"
