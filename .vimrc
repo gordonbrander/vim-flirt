@@ -1,48 +1,90 @@
 ""
 "" Install Vundle
 ""
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
-set nocompatible      " Use vim, no vi defaults
-filetype off          " required by Vundle!
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-" let Vundle manage Vundle
-" required! 
-Bundle 'gmarik/vundle'
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
 
 ""
 "" Bundles
 ""
 
-Bundle "tpope/vim-fugitive"
-Bundle "pangloss/vim-javascript"
-Bundle "leshill/vim-json"
-Bundle "ervandew/supertab"
-Bundle "scrooloose/syntastic"
-Bundle "tomasr/molokai"
-Bundle "scrooloose/nerdcommenter"
-Bundle "tpope/vim-markdown"
-Bundle "sjl/gundo.vim"
-Bundle "jeetsukumaran/vim-buffergator"
+"" Common Keyboard mappings
+Plugin 'tpope/vim-unimpaired'
+
+Plugin 'tpope/vim-fugitive'
+Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'sjl/gundo.vim'
+Plugin 'jeetsukumaran/vim-buffergator'
+Plugin 'ervandew/supertab'
+Plugin 'mileszs/ack.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'easymotion/vim-easymotion'
+Plugin 'tpope/vim-surround'
+"" Sublime-style multiple cursors
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'chrisbra/NrrwRgn'
+Plugin 'airblade/vim-gitgutter'
+
+"" Color theme
+Plugin 'tomasr/molokai'
+
+"" Language bundles
+Plugin 'pangloss/vim-javascript'
+Plugin 'leshill/vim-json'
+Plugin 'tpope/vim-markdown'
 "" Stylus language highlighting
-Bundle "wavded/vim-stylus"
+Plugin 'wavded/vim-stylus'
 
 " Install Snipmate.
 " <https://github.com/garbas/vim-snipmate#using-vundle>
 " First, install dependencies...
-Bundle "MarcWeber/vim-addon-mw-utils"
-Bundle "tomtom/tlib_vim"
-Bundle "honza/snipmate-snippets"
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'honza/snipmate-snippets'
 " Then install Snipmate bundle
-Bundle "garbas/vim-snipmate"
+Plugin 'garbas/vim-snipmate'
 
-filetype plugin indent on " required by Vundle! ('filetype plugin on' also works)
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just
+" :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to
+" auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
 
 "" Configure BufferGator
-let buffergator_viewport_split_policy = "T"
+let buffergator_viewport_split_policy = 'T'
 let buffergator_split_size = 15
+
+"" Configure https://github.com/scrooloose/syntastic/#installation
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 ""
 "" Basic Setup
@@ -75,7 +117,7 @@ set expandtab                     " use spaces, not tabs
 set list                          " Show invisible characters
 set backspace=indent,eol,start    " backspace through everything in insert mode
 
-if exists("g:enable_mvim_shift_arrow")
+if exists('g:enable_mvim_shift_arrow')
   let macvim_hig_shift_movement = 1 " mvim shift-arrow-keys
 endif
 
@@ -101,3 +143,4 @@ set clipboard=unnamed
 
 "" Turn on mouse support in xterm.
 set mouse=a
+
