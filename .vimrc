@@ -35,9 +35,11 @@ Plugin 'tpope/vim-surround'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'chrisbra/NrrwRgn'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'maciakl/vim-neatstatus'
 
 "" Color theme
 Plugin 'tomasr/molokai'
+Plugin 'altercation/vim-colors-solarized'
 
 "" Language bundles
 Plugin 'pangloss/vim-javascript'
@@ -51,7 +53,6 @@ Plugin 'wavded/vim-stylus'
 " First, install dependencies...
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
-Plugin 'honza/snipmate-snippets'
 " Then install Snipmate bundle
 Plugin 'garbas/vim-snipmate'
 
@@ -76,11 +77,6 @@ filetype plugin indent on    " required
 let buffergator_viewport_split_policy = 'T'
 let buffergator_split_size = 15
 
-"" Configure https://github.com/scrooloose/syntastic/#installation
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
@@ -90,14 +86,22 @@ let g:syntastic_check_on_wq = 0
 "" Basic Setup
 ""
 
-color molokai         " Use Monokaii colorscheme port for vim
+" Turn on syntax highlighting allowing local overrides
+syntax enable
+" Enable degraded Solarized, if you want
+" let g:solarized_termcolors=256
+" Set Solarized light/dark
+set background=dark
+colorscheme solarized
 
 set number            " Show line numbers
 set ruler             " Show line and column number
-syntax enable         " Turn on syntax highlighting allowing local overrides
 set encoding=utf-8    " Set default encoding to UTF-8
 set colorcolumn=80    " Show a visual indicator of the 80-character mark.
 set showmatch         " Highlight matching parenthesis
+
+" Always show status line
+set laststatus=2
 
 ""
 "" Swap Files
