@@ -89,8 +89,11 @@ let g:syntastic_check_on_wq = 0
 
 " Turn on syntax highlighting allowing local overrides
 syntax enable
+" For Ubuntu
+" http://stackoverflow.com/questions/5560658/ubuntu-vim-and-the-solarized-color-palette
+set t_Co=256
 " Enable degraded Solarized, if you want
-" let g:solarized_termcolors=256
+let g:solarized_termcolors=256
 " Set Solarized light/dark
 set background=dark
 colorscheme solarized
