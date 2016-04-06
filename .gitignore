@@ -1,6 +1,8 @@
 # Ignore bundles in the bundle directory. We let Vundle
 # manage them instead of Git.
 /bundle/*
+# Except our Vundle submodule
+!/bundle/Vundle
 
 # Ignore all swap/backup files
 /tmp/*
