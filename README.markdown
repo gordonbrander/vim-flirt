@@ -8,6 +8,6 @@ Woo! The idea is, you can `git clone` this folder ANYWHERE and have AWESOME text
 Install
 -------
 
-    git clone https://github.com/gordonbrander/vim-flirt.git ~/.vim --recurse-submodules
+    git clone https://github.com/gordonbrander/vim-flirt.git ~/.vim --recursive
     ln -s ~/.vim/.vimrc ~/.vimrc
-    vim +BundleInstall +qall
+    vim +PluginInstall +qall
