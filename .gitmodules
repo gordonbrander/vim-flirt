@@ -1,4 +1,4 @@
-[submodule "bundle/Vundle"]
-	path = bundle/Vundle
-	url = https://github.com/VundleVim/Vundle.vim
-  ignore = dirty
+[submodule "bundle/Vundle.vim"]
+	path = bundle/Vundle.vim
+	url = https://github.com/VundleVim/Vundle.vim.git
+	ignore = dirty
