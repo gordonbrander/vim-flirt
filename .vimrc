@@ -1,4 +1,9 @@
 ""
+"" Good stuff here, btw
+"" https://github.com/scrooloose/vimfiles/blob/master/vimrc#L78
+""
+
+""
 "" Install Vundle
 ""
 set nocompatible              " be iMproved, required
@@ -21,8 +26,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-unimpaired'
 
 Plugin 'tpope/vim-fugitive'
-Plugin 'scrooloose/syntastic'
-Plugin 'scrooloose/nerdtree'
+"Plugin 'scrooloose/syntastic'
+"Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'sjl/gundo.vim'
 Plugin 'jeetsukumaran/vim-buffergator'
@@ -78,10 +83,10 @@ filetype plugin indent on    " required
 let buffergator_viewport_split_policy = 'T'
 let buffergator_split_size = 15
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_auto_loc_list = 1
+"let g:syntastic_check_on_open = 1
+"let g:syntastic_check_on_wq = 0
 
 ""
 "" Basic Setup
@@ -91,9 +96,9 @@ let g:syntastic_check_on_wq = 0
 syntax enable
 " For Ubuntu
 " http://stackoverflow.com/questions/5560658/ubuntu-vim-and-the-solarized-color-palette
-set t_Co=256
+" set t_Co=256
 " Enable degraded Solarized, if you want
-let g:solarized_termcolors=256
+" let g:solarized_termcolors=256
 " Set Solarized light/dark
 set background=dark
 colorscheme solarized
@@ -123,7 +128,10 @@ set tabstop=2                     " a tab is two spaces
 set shiftwidth=2                  " an autoindent (with <<) is two spaces
 set expandtab                     " use spaces, not tabs
 set list                          " Show invisible characters
+set listchars=tab:▷⋅,trail:⋅,nbsp:⋅
 set backspace=indent,eol,start    " backspace through everything in insert mode
+set showcmd     "show incomplete cmds down the bottom
+set showmode    "show current mode down the bottom
 
 if exists('g:enable_mvim_shift_arrow')
   let macvim_hig_shift_movement = 1 " mvim shift-arrow-keys
