@@ -113,13 +113,6 @@ set showmatch         " Highlight matching parenthesis
 set laststatus=2
 
 ""
-"" Swap Files
-""
-
-set dir=~/.vim/tmp
-set backupdir=~/.vim/tmp
-
-""
 "" Whitespace
 ""
 
